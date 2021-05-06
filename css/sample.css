@@ -1,0 +1,108 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    text-align: center;
+  }
+  .main-header {
+    padding-bottom: 15%;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../images/header.jpg");
+    background-attachment: fixed;
+  }
+  /* ここから */
+  .header {
+      height: 50px;
+      background-color: #2B2B2B;
+      position: fixed;
+      float: left;
+      width: 100%;
+
+  }
+  .clearfix:after {
+      content: "";
+      display: block;
+      clear: both;
+  }
+  header ul {
+    list-style: none;
+}
+ header ul a {
+     color: white;
+     padding: 10px;
+ }
+  .left {
+      float: left;
+      margin-left: 0px;
+  }
+  .right {
+      float: right;
+  }
+ 
+  header ul a {
+  }
+  header li {
+  }
+  header ul:after {
+  }
+  /* ここまでがheader部分の実装 */
+  .main-header img {
+  /* main画像（白い「Achieve」の文字の画像）部分の実装 */
+  text-align: center;
+  width: 13%;
+  padding-top: 150px;
+  }
+  .about {
+  /* About Achieve部分の実装 */
+  }
+  .about h1 {
+      font-size: 1.5rem;
+  }
+  .about p {
+      font-size: 0.8rem;
+  }
+  /* ここから */
+  .function {
+      background-color: #D3D3D3;
+      display: flex;
+      flex-direction: column;
+      /* 上記のコードは積み重なるように配置をするコードである (つまり縦方向である) */
+  }
+  .function-images {
+      display: flex;
+      flex-direction: row;
+      /* 上記のコードは行のテキストの方向に配置するコードである。（つまり横方向である） */
+      justify-content: center;
+      /* 上記のコードは真ん中に配置するよと言う意味のコードである。 */
+  }
+  .function-image {
+      /* float: left; */
+      padding: 60px;
+      /* text-align: center; */
+  }
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  /* ここまでがfunction部分の実装 */
+  footer {
+  /* footer部分の実装 */
+  height: 70px;
+  background-color: #283a4b;
+  font-size: 0.8rem;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  /* 上記一行で上下を真ん中にできる */
+  display: table-cell;
+  /* 上記一行でテーブルセルを設定する。二行上のコードはテーブルセルではないと機能しないから。 */
+  }
+  .final {
+      display: table;
+      /* 上記一行でテーブルにする。 */
+      width: 100%;
+      /* なぜかwidth100%にしないと半分だけになっていたのでwidthは100%にする */
+  }
